@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
     <title>Landing Page - Hasan Qahir</title>
 </head>
 <body>
+    <!-- ? Uses 12-col grid to Section and Layout everything on the page -->
+
+    <!-- * Header Div - Contains title and main navigation links -->
     <header class="grid">
         <h1>SecureWare</h1>
         <nav>
@@ -18,18 +20,23 @@
         </nav>
     </header>
 
+    <!-- * Main Div - Contains the bulk of the page -->
     <main class="grid">
+
+        <!-- * The four animated words directly below the header -->
         <div id="landingTextDiv">
             <h2 class="landingText">Enhance</h2>
             <h2 class="landingText" style="grid-column: 2/5;">Innovate</h2>
             <h2 class="landingText">Transforming</h2>
             <h2 class="landingText" style="grid-column: 2/6;">Workplaces</h2>
-
         </div>
+
+        <!-- * Image and vertical line below the header -->
         <div style="grid-column: 5/13; text-align: center; box-sizing: border-box">
             <img src="../images/man-application-program.svg" alt="" id="mainimg">
         </div>
 
+        <!-- * Row of panels below the image. Each panel is styled by the class "coreUses" -->
         <div id="coreUsesDisplay">
             <div class="coreUses">
                 <h3>Features</h3>
@@ -48,6 +55,7 @@
             </div>
         </div>
 
+        <!-- * Call to Action placed within a floating box. The text input  does not do anything -->
         <div class="floatingBox">
             <div style="border-bottom: solid black 2px; grid-column: 2/6;">
                 <h2 id="callToAct"> Sign-Up to change how you work here!</h2>
@@ -65,6 +73,7 @@
         </div>
     </main>
 
+    <!-- * Footer holds social links and unused internal links for the website.  -->
     <footer class="grid">
         <div class="social">
             <a href="#" style="grid-column: 5/6;">Facebook</a>

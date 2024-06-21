@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+/*? The CSS file is a huge mess */
+/* * Selectors were roughly placed in the order their respective element appears in index.html */
+/* * I have only added a comment to the @media and @keyframe portions/ */
+
 body {
     justify-content: center;
     margin: 0;
@@ -75,6 +79,8 @@ main #landingTextDiv {
     font-size: 3.5em;
 }
 
+/* * The animation: property above uses this keyframe information to know how the element should be changed. */
+/* * CSS animation will interpolate the process, smoothing out the transition. Linear rate of change by default, but non-linear transitions are an option */
 @keyframes enhance{
     from {
         font-size: 2.5em;
@@ -210,6 +216,8 @@ footer .social{
     color:#aaa;
 }
 
+/* * Mostly reduced the font size of parent elements, since 'em' is always relative to the parent element. */
+/* * At very small sizes the entire layout breaks down. Adding a 2nd @media query will just break things unless I spend way too much time on it */
 @media (max-width: 900px) {
     h1 {
         font-size: 2em;
